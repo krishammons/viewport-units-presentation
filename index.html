@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,129 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h2>Intro to Viewport Units</h2>
+					<p>
+						<small><a href="http://krishammons.com/">Kris Hammons</a> / <a href="http://twitter.com/krishammons">@krishammons</a></small>
+					</p>
+				</section>
+				<section>
+					<section>
+						<h2>Sizing options</h2>
+						<pre><code class="hlcss" data-trim contenteditable>
+// Pixels
+.container {
+  width: 960px;
+}
+
+// Ems
+.container {
+  width: 8em;
+}
+
+// %
+.container {
+  width: 90%;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h2>Sizing Type</h2>
+						<pre><code class="hlcss" data-trim contenteditable>
+// Pixels
+h1 {
+  font-size: 16px;
+}
+
+// Ems
+h1 {
+  font-size: 1.2em;
+}
+
+// Rems
+h1 {
+  font-size: 1rem;
+}
+						</code></pre>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Viewport Units</h2>
+						<pre class="fragment"><code class="hlcss" data-trim contenteditable>
+vw // 1/100th viewport width
+vh // 1/100th viewport height
+vmin // 1/100th of the smallest side
+vmax // 1/100th of the largest side
+						</code></pre>
+					</section>
+					<section>
+						<h2>To Clarify</h2>
+						<p><code class="hlcss">1vmax</code> equals <code class="hlcss">1vh</code> in portrait mode, whilst in landscape mode, <code class="hlcss">1vmax</code> will equal <code class="hlcss">1vw</code>.</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Use case</h2>
+						<pre><code class="hlcss" data-trim contenteditable>
+.sidebar {
+  height: 100%;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h2>Use case</h2>
+						<pre><code class="hlcss" data-trim contenteditable>
+html, body { height: 100%; }
+
+.sidebar {
+  height: 100%;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h1>?</h1>
+					</section>
+					<section>
+						<h2>Use case</h2>
+						<pre><code class="hlcss" data-trim contenteditable>
+html, body { height: 100%; }
+
+.sidebar {
+  height: 100%;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h2>Sizing with vh</h2>
+						<pre><code class="hlcss" data-trim contenteditable>
+.sidebar {
+  height: 100vh;
+}
+						</code></pre>
+					</section>
+
+				</section>
+				<section>
+					<h2>Browser Support</h2>
+				</section>
+				<section>
+					<h2>Bugs</h2>
+				</section>
+				<section>
+					<h2>Typography</h2>
+				</section>
+				<section>
+					<h2>Resources</h2>
+					<ul>
+						<li><a href="https://web-design-weekly.com/2014/11/18/viewport-units-vw-vh-vmin-vmax/">https://web-design-weekly.com/2014/11/18/viewport-units-vw-vh-vmin-vmax/</a>
+						<li><a href="https://www.smashingmagazine.com/2016/05/fluid-typography/">https://www.smashingmagazine.com/2016/05/fluid-typography/</a></li>
+						<li><a href="https://css-tricks.com/viewport-sized-typography/">https://css-tricks.com/viewport-sized-typography/</a></li>
+					</ul>
+				</section>
+				<section>
+					<h2>Thank you</h2>
+				</section>
 			</div>
 		</div>
 
